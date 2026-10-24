@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "declared_on": "2026-10-24",
+  "basis": "Explicit operational demonstration rules, not optimized against final holdout performance",
+  "availability_assumption": "Real historical observations available at local Monday close; actual delivery timestamps are unknown",
+  "late_after_hours": 24,
+  "missing_expected_product_tolerance": 0,
+  "sales_mean_ratio_low": 0.5,
+  "sales_mean_ratio_high": 2.0,
+  "activity_fraction_change": 0.20,
+  "error_wape_investigate_above": 1.0,
+  "interval_coverage_floor_95": 0.85,
+  "coverage_window_weeks": 4,
+  "minimum_scored_rows": 20,
+  "action": "Investigation signal only. No model-failure claim, automatic retraining, external notification, or live job."
+}

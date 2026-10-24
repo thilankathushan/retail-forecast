@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "frozen_date": "2026-10-24",
+  "rationale": "Coverage has 104 complete Monday weeks. Reserve final 13 weeks for holdout, first 52 for initial training, and use the intervening 39 weeks for development. Chosen before baseline performance was computed.",
+  "train_start": "2009-12-07",
+  "development_start": "2010-12-06",
+  "holdout_start": "2011-09-05",
+  "holdout_end_exclusive": "2011-12-05",
+  "horizon_weeks": 1,
+  "min_history_weeks": 4,
+  "trailing_weeks": 4,
+  "seasonal_weeks": 52,
+  "timezone": "Europe/London",
+  "seasonal_fallback": "trailing_average",
+  "source_csv_sha256": "834ba7c3c25bcd1d4fdc20b969b6f4f6da5e84b611036bbd18ba47ce3569e542"
+}

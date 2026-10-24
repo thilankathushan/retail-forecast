@@ -1,0 +1,31 @@
+{
+  "source_url": "https://archive.ics.uci.edu/dataset/502/online+retail+ii",
+  "download_url": "https://archive.ics.uci.edu/static/public/502/online%2Bretail%2Bii.zip",
+  "retrieved_at_utc": "2026-10-23T18:22:09.733979+00:00",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Chen, D. (2012). Online Retail II [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D",
+  "listed_workbook_size": "43.5 MB",
+  "archive_bytes": 45622418,
+  "archive_sha256": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb",
+  "workbook_bytes": 45622278,
+  "workbook_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "normalized_csv_sha256": "834ba7c3c25bcd1d4fdc20b969b6f4f6da5e84b611036bbd18ba47ce3569e542",
+  "columns": [
+    "Invoice",
+    "StockCode",
+    "Description",
+    "Quantity",
+    "InvoiceDate",
+    "Price",
+    "Customer ID",
+    "Country"
+  ],
+  "sheet_rows": {
+    "Year 2009-2010": 525461,
+    "Year 2010-2011": 541910
+  },
+  "input_rows": 1067371,
+  "min_timestamp": "2009-12-01T07:45:00",
+  "max_timestamp": "2011-12-09T12:50:00"
+}

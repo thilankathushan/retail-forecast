@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "frozen_at_utc": "2026-10-24T05:19:37.280736+00:00",
+  "protocol": {
+    "schema_version": 1,
+    "frozen_date": "2026-10-24",
+    "rationale": "Coverage has 104 complete Monday weeks. Reserve final 13 weeks for holdout, first 52 for initial training, and use the intervening 39 weeks for development. Chosen before baseline performance was computed.",
+    "train_start": "2009-12-07",
+    "development_start": "2010-12-06",
+    "holdout_start": "2011-09-05",
+    "holdout_end_exclusive": "2011-12-05",
+    "horizon_weeks": 1,
+    "min_history_weeks": 4,
+    "trailing_weeks": 4,
+    "seasonal_weeks": 52,
+    "timezone": "Europe/London",
+    "seasonal_fallback": "trailing_average",
+    "source_csv_sha256": "834ba7c3c25bcd1d4fdc20b969b6f4f6da5e84b611036bbd18ba47ce3569e542"
+  },
+  "features": [
+    "lag_1",
+    "lag_2",
+    "lag_4",
+    "lag_13",
+    "lag_52",
+    "mean_4",
+    "mean_13",
+    "std_4",
+    "history_observed",
+    "history_active",
+    "activity_fraction",
+    "history_age",
+    "month",
+    "week_sin",
+    "week_cos"
+  ],
+  "selected_model": "medium",
+  "configuration": {
+    "max_iter": 60,
+    "max_leaf_nodes": 15
+  },
+  "seed": 42,
+  "cpu_threads": 2,
+  "retraining": "weekly expanding history; targets strictly before origin",
+  "interval_updates": "none during holdout",
+  "levels": [
+    0.8,
+    0.95
+  ],
+  "scale": "max(1, prior mean13 available weeks)",
+  "segment_rules": {
+    "history": [
+      0,
+      4,
+      13,
+      52
+    ],
+    "scale": [
+      5,
+      25
+    ],
+    "activity": "all_zero vs previously_positive"
+  },
+  "metrics": [
+    "mae",
+    "aggregate_wape",
+    "interval_coverage",
+    "mean_width",
+    "median_width",
+    "mean_interval_score"
+  ],
+  "dependencies": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "python": "3.14.0",
+  "weekly_sha256": "b9b5f4088a3de023aa2b0ba61fe4aeb371c043cd173134edd208095e83c1a002",
+  "protocol_sha256": "c072934f9f44bd16a8e7df80f3bb6a1c19760d1fc1a48c09d305c3372eaf7a89",
+  "calibration_sha256": "3a23b7e73ad4b79168d41fd242c5edc45640639b4f08628ae85cddafe668f597",
+  "code_hashes": {
+    "retail_forecast/tree.py": "e06b4b9dcaa8ea5bb5c696f42bb9c5607241fa3844afdafb9e1a3d219b909487",
+    "retail_forecast/intervals.py": "f4c0058571a89dba9cff26a2cf20a7c3b773db016001a6c54694ee9fc37f533a",
+    "retail_forecast/final_evaluation.py": "105b6c5490a4c814f8c979c57c93078e7a4a5f7fb50f81d085d14d64c2204ea9",
+    "retail_forecast/evaluation.py": "b6ad1f0fd42847f1d3f8b922b733e091ab808308f0e17094ea1c4da21adfab0c",
+    "retail_forecast/baseline.py": "96c395faaed0d970f252bb2abe8597a0975e7f2184cbfa01e75a7609f3adb867"
+  },
+  "declaration_sha256": "8264c69cbbf1c954bfe47fbb09619fb7d6c52c7670cba4193fadf9e3308e0738"
+}

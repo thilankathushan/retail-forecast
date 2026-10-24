@@ -1,0 +1,58 @@
+{
+  "selected": "medium",
+  "configuration": {
+    "max_iter": 60,
+    "max_leaf_nodes": 15
+  },
+  "seed": 42,
+  "training_end_exclusive": "2011-08-29",
+  "training_rows": 331697,
+  "protocol": {
+    "schema_version": 1,
+    "frozen_date": "2026-10-24",
+    "rationale": "Coverage has 104 complete Monday weeks. Reserve final 13 weeks for holdout, first 52 for initial training, and use the intervening 39 weeks for development. Chosen before baseline performance was computed.",
+    "train_start": "2009-12-07",
+    "development_start": "2010-12-06",
+    "holdout_start": "2011-09-05",
+    "holdout_end_exclusive": "2011-12-05",
+    "horizon_weeks": 1,
+    "min_history_weeks": 4,
+    "trailing_weeks": 4,
+    "seasonal_weeks": 52,
+    "timezone": "Europe/London",
+    "seasonal_fallback": "trailing_average",
+    "source_csv_sha256": "834ba7c3c25bcd1d4fdc20b969b6f4f6da5e84b611036bbd18ba47ce3569e542"
+  },
+  "protocol_sha256": "c072934f9f44bd16a8e7df80f3bb6a1c19760d1fc1a48c09d305c3372eaf7a89",
+  "weekly_file_sha256": "b9b5f4088a3de023aa2b0ba61fe4aeb371c043cd173134edd208095e83c1a002",
+  "feature_code_sha256": "e06b4b9dcaa8ea5bb5c696f42bb9c5607241fa3844afdafb9e1a3d219b909487",
+  "source_csv_sha256": "834ba7c3c25bcd1d4fdc20b969b6f4f6da5e84b611036bbd18ba47ce3569e542",
+  "selection": "minimum pooled development MAE; tie by name",
+  "schema_version": 1,
+  "features": [
+    "lag_1",
+    "lag_2",
+    "lag_4",
+    "lag_13",
+    "lag_52",
+    "mean_4",
+    "mean_13",
+    "std_4",
+    "history_observed",
+    "history_active",
+    "activity_fraction",
+    "history_age",
+    "month",
+    "week_sin",
+    "week_cos"
+  ],
+  "dependencies": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "python": "3.14.0",
+  "model_sha256": "eb05ccd9877740347eda2126dcb9438f14c20f34d399243350600984362801a8"
+}

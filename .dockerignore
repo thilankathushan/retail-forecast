@@ -1,0 +1,11 @@
+# Allowlist: never send datasets, models, local environments or secrets to Docker.
+**
+!Dockerfile
+!requirements-app.txt
+!requirements-app-lock.txt
+!dashboard.py
+!retail_forecast/
+!retail_forecast/__init__.py
+!retail_forecast/api.py
+!.streamlit/
+!.streamlit/config.toml

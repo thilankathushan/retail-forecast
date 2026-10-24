@@ -1,0 +1,112 @@
+[
+  {
+    "name": "cloudpickle",
+    "version": "3.1.2",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "contourpy",
+    "version": "1.4.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "cycler",
+    "version": "0.12.1",
+    "license_metadata": "Copyright (c) 2015, matplotlib project\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or othe"
+  },
+  {
+    "name": "et_xmlfile",
+    "version": "2.0.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "fonttools",
+    "version": "4.67.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "joblib",
+    "version": "1.6.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "kiwisolver",
+    "version": "1.5.1",
+    "license_metadata": "=========================\n The Kiwi licensing terms\n=========================\nKiwi is licensed under the terms of the Modified BSD License (also known as\nNew or Revised BSD), as follows:\n\nCopyright (c) 2013-2026, Nucleic Development Team\n\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this\nlist of conditions "
+  },
+  {
+    "name": "matplotlib",
+    "version": "3.11.2",
+    "license_metadata": "License agreement for matplotlib versions 1.3.0 and later\n =========================================================\n\n 1. This LICENSE AGREEMENT is between the Matplotlib Development Team\n (\"MDT\"), and the Individual or Organization (\"Licensee\") accessing and\n otherwise using matplotlib software in source or binary form and its\n associated documentation.\n\n 2. Subject to the terms and conditions of this License Agreement, MDT\n hereby grants Licensee a nonexclusive, royalty-free, world-wide licens"
+  },
+  {
+    "name": "narwhals",
+    "version": "2.27.1",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.4",
+    "license_metadata": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0"
+  },
+  {
+    "name": "openpyxl",
+    "version": "3.1.5",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license_metadata": "Apache-2.0 OR BSD-2-Clause"
+  },
+  {
+    "name": "pandas",
+    "version": "3.1.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "pillow",
+    "version": "13.0.0",
+    "license_metadata": "MIT-CMU"
+  },
+  {
+    "name": "pip",
+    "version": "25.2",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "pyparsing",
+    "version": "3.3.3",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "python-dateutil",
+    "version": "3.0.0",
+    "license_metadata": "Dual License"
+  },
+  {
+    "name": "scikit-learn",
+    "version": "1.9.1",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "scipy",
+    "version": "1.18.1",
+    "license_metadata": "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers.\n All rights reserved.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n\n 2. Redistributions in binary form must reproduce the above\n    copyright notice, this list of conditions and the following\n    disc"
+  },
+  {
+    "name": "six",
+    "version": "1.17.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "threadpoolctl",
+    "version": "3.7.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "tzdata",
+    "version": "2026.5",
+    "license_metadata": "Apache-2.0"
+  }
+]

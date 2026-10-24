@@ -1,0 +1,2 @@
+# Isolated tracking environment: does not alter frozen forecasting dependencies.
+mlflow>=3.5,<4

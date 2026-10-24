@@ -1,0 +1,5 @@
+{
+  "all_three_baselines_seconds": 25.49550379102584,
+  "includes": "cohort construction and predictions; excludes CSV loading and metric serialization",
+  "metrics_match_saved_run": true
+}

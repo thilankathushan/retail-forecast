@@ -1,0 +1,6 @@
+data_dir = "data/processed/uci"
+artifact_dir = "artifacts/uci"
+model_dir = "models/uci"
+horizon_weeks = 1
+random_seed = 42
+timezone = "Europe/London"

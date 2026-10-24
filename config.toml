@@ -1,0 +1,8 @@
+# Paths resolve relative to this file, regardless of working directory.
+data_dir = "data/processed"
+artifact_dir = "artifacts"
+model_dir = "models"
+horizon_weeks = 1
+random_seed = 42
+# Naive source timestamps are interpreted as UK retailer wall-clock time.
+timezone = "Europe/London"

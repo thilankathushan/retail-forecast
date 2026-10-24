@@ -1,0 +1,104 @@
+{
+  "selected": "medium",
+  "candidates": {
+    "small": {
+      "rows": 163986,
+      "actual_units": 3175137.0,
+      "absolute_error": 2325217.8497849745,
+      "mae": 14.179368054498399,
+      "wape": 0.7323204793320649,
+      "fit_predict_seconds": 24.376863832003437
+    },
+    "medium": {
+      "rows": 163986,
+      "actual_units": 3175137.0,
+      "absolute_error": 2257746.951985272,
+      "mae": 13.767925017899529,
+      "wape": 0.7110707197784764,
+      "fit_predict_seconds": 44.15941191604361
+    }
+  },
+  "baseline_metrics": {
+    "last_observed_week": {
+      "rows": 163986,
+      "actual_units": 3175137.0,
+      "absolute_error": 3061925.0,
+      "mae": 18.67186833022331,
+      "wape": 0.9643442156984092,
+      "seasonal_fallback_rows": 0
+    },
+    "trailing_average": {
+      "rows": 163986,
+      "actual_units": 3175137.0,
+      "absolute_error": 2876691.0,
+      "mae": 17.542296293586038,
+      "wape": 0.9060053156761425,
+      "seasonal_fallback_rows": 0
+    },
+    "seasonal_naive": {
+      "rows": 163986,
+      "actual_units": 3175137.0,
+      "absolute_error": 4280536.25,
+      "mae": 26.10305910260632,
+      "wape": 1.3481422218946773,
+      "seasonal_fallback_rows": 27312
+    }
+  },
+  "coverage": {
+    "candidate_product_weeks": 165617,
+    "history_status_counts": {
+      "eligible": 163986,
+      "short_history": 1218,
+      "new_product": 413
+    },
+    "target_observed": 165617,
+    "scored_product_weeks": 163986,
+    "eligible_missing_target": 0,
+    "scored_all_zero_history": 1211,
+    "scored_fraction": 0.9901519771521039
+  },
+  "failures": [],
+  "holdout_evaluated": false,
+  "configurations": {
+    "small": {
+      "max_iter": 30,
+      "max_leaf_nodes": 7
+    },
+    "medium": {
+      "max_iter": 60,
+      "max_leaf_nodes": 15
+    }
+  },
+  "total_seconds": 71.96347104100278,
+  "metadata": {
+    "selected": "medium",
+    "configuration": {
+      "max_iter": 60,
+      "max_leaf_nodes": 15
+    },
+    "seed": 42,
+    "training_end_exclusive": "2011-08-29",
+    "training_rows": 331697,
+    "protocol": {
+      "schema_version": 1,
+      "frozen_date": "2026-10-24",
+      "rationale": "Coverage has 104 complete Monday weeks. Reserve final 13 weeks for holdout, first 52 for initial training, and use the intervening 39 weeks for development. Chosen before baseline performance was computed.",
+      "train_start": "2009-12-07",
+      "development_start": "2010-12-06",
+      "holdout_start": "2011-09-05",
+      "holdout_end_exclusive": "2011-12-05",
+      "horizon_weeks": 1,
+      "min_history_weeks": 4,
+      "trailing_weeks": 4,
+      "seasonal_weeks": 52,
+      "timezone": "Europe/London",
+      "seasonal_fallback": "trailing_average",
+      "source_csv_sha256": "834ba7c3c25bcd1d4fdc20b969b6f4f6da5e84b611036bbd18ba47ce3569e542"
+    },
+    "protocol_sha256": "c072934f9f44bd16a8e7df80f3bb6a1c19760d1fc1a48c09d305c3372eaf7a89",
+    "weekly_file_sha256": "b9b5f4088a3de023aa2b0ba61fe4aeb371c043cd173134edd208095e83c1a002",
+    "feature_code_sha256": "e06b4b9dcaa8ea5bb5c696f42bb9c5607241fa3844afdafb9e1a3d219b909487",
+    "source_csv_sha256": "834ba7c3c25bcd1d4fdc20b969b6f4f6da5e84b611036bbd18ba47ce3569e542",
+    "selection": "minimum pooled development MAE; tie by name"
+  }
+}

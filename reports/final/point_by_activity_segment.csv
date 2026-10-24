@@ -1,0 +1,9 @@
+activity_segment,model,rows,actual_units,absolute_error,mae,wape
+all_zero,tree,403,0.0,0.0,0.0,
+all_zero,last_observed_week,403,0.0,0.0,0.0,
+all_zero,trailing_average,403,0.0,0.0,0.0,
+all_zero,seasonal_naive,403,0.0,0.0,0.0,
+previously_positive,tree,58992,1884478.0,1125248.643543741,19.074597293594742,0.5971142372284213
+previously_positive,last_observed_week,58992,1884478.0,1415540.0,23.995457011120152,0.7511576150000159
+previously_positive,trailing_average,58992,1884478.0,1219293.75,20.668798311635477,0.647019360268467
+previously_positive,seasonal_naive,58992,1884478.0,2044746.0,34.66141171684296,1.0850463629716027

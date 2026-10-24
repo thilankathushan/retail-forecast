@@ -1,0 +1,19 @@
+{
+  "rows": 163986,
+  "levels": {
+    "0.8": {
+      "quantile": 0.6408995149395663,
+      "rank": 131190
+    },
+    "0.95": {
+      "quantile": 2.6666666666666665,
+      "rank": 155788
+    }
+  },
+  "method": "pooled historical OOS absolute error / max(1, prior mean13)",
+  "selected_model": "medium",
+  "development_prediction_sha256": "3b5dd8b3baf49bdcbb770217920235b01cb52f375cb3f8ef73d63b0c35463b33",
+  "start": "2010-12-06",
+  "end_exclusive": "2011-09-05",
+  "uses_holdout_outcomes": false
+}

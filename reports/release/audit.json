@@ -1,0 +1,50 @@
+{
+  "scope": "Git-tracked and unignored candidate files in Project 3 only; ignored runtime files excluded",
+  "candidate_files": 106,
+  "candidate_bytes": 1138825,
+  "largest_files": [
+    {
+      "path": "reports/final/largest_error_examples.png",
+      "bytes": 193996
+    },
+    {
+      "path": "reports/final/point_accuracy.png",
+      "bytes": 140508
+    },
+    {
+      "path": "reports/application/next-week.png",
+      "bytes": 81925
+    },
+    {
+      "path": "reports/application/monitoring.png",
+      "bytes": 75222
+    },
+    {
+      "path": "reports/application/beyond-dataset.png",
+      "bytes": 73603
+    },
+    {
+      "path": "reports/application/historical-chart.png",
+      "bytes": 72440
+    },
+    {
+      "path": "reports/final/interval_diagnostics.png",
+      "bytes": 67602
+    },
+    {
+      "path": "reports/application/empty-search.png",
+      "bytes": 40536
+    },
+    {
+      "path": "PROGRESS.md",
+      "bytes": 38488
+    },
+    {
+      "path": "retail_forecast/monitoring.py",
+      "bytes": 16746
+    }
+  ],
+  "findings": [],
+  "limitations": "Pattern scan is not a proof of absence of secrets; PNGs visually inspected separately. Git history and vulnerability scanning are not covered.",
+  "code_license": "MIT for original code; UCI dataset remains CC BY 4.0 with separate attribution"
+}

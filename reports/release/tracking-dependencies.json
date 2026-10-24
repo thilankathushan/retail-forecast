@@ -1,0 +1,442 @@
+[
+  {
+    "name": "aiohappyeyeballs",
+    "version": "2.7.1",
+    "license_metadata": "PSF-2.0"
+  },
+  {
+    "name": "aiohttp",
+    "version": "3.14.5",
+    "license_metadata": "Apache-2.0 AND MIT"
+  },
+  {
+    "name": "aiosignal",
+    "version": "1.4.0",
+    "license_metadata": "Apache 2.0"
+  },
+  {
+    "name": "alembic",
+    "version": "1.20.1",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "annotated-doc",
+    "version": "0.0.5",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "annotated-types",
+    "version": "0.8.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "anyio",
+    "version": "4.15.1",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "attrs",
+    "version": "26.1.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "blinker",
+    "version": "1.9.0",
+    "license_metadata": "See package LICENSE; metadata unspecified"
+  },
+  {
+    "name": "cachetools",
+    "version": "7.2.4",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "certifi",
+    "version": "2026.10.23",
+    "license_metadata": "MPL-2.0"
+  },
+  {
+    "name": "cffi",
+    "version": "2.1.1",
+    "license_metadata": "MIT-0"
+  },
+  {
+    "name": "charset-normalizer",
+    "version": "3.5.2",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "click",
+    "version": "8.5.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "cloudpickle",
+    "version": "3.1.2",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "contourpy",
+    "version": "1.4.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "cryptography",
+    "version": "50.0.2",
+    "license_metadata": "Apache-2.0 OR BSD-3-Clause"
+  },
+  {
+    "name": "cycler",
+    "version": "0.12.1",
+    "license_metadata": "Copyright (c) 2015, matplotlib project\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or othe"
+  },
+  {
+    "name": "databricks-sdk",
+    "version": "0.156.0",
+    "license_metadata": "See package LICENSE; metadata unspecified"
+  },
+  {
+    "name": "docker",
+    "version": "7.2.0",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "fastapi",
+    "version": "0.162.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "Flask",
+    "version": "3.1.3",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "flask-cors",
+    "version": "6.0.5",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "fonttools",
+    "version": "4.67.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "frozenlist",
+    "version": "1.8.0",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "gitdb",
+    "version": "4.0.12",
+    "license_metadata": "BSD License"
+  },
+  {
+    "name": "GitPython",
+    "version": "3.2.1",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "google-auth",
+    "version": "2.62.0",
+    "license_metadata": "Apache 2.0"
+  },
+  {
+    "name": "graphene",
+    "version": "3.4.3",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "graphql-core",
+    "version": "3.2.13",
+    "license_metadata": "MIT license"
+  },
+  {
+    "name": "graphql-relay",
+    "version": "3.2.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "gunicorn",
+    "version": "26.2.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "h11",
+    "version": "0.16.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "huey",
+    "version": "3.5.3",
+    "license_metadata": "See package LICENSE; metadata unspecified"
+  },
+  {
+    "name": "idna",
+    "version": "3.20",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "importlib_metadata",
+    "version": "9.1.0",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "itsdangerous",
+    "version": "2.2.0",
+    "license_metadata": "See package LICENSE; metadata unspecified"
+  },
+  {
+    "name": "Jinja2",
+    "version": "3.1.6",
+    "license_metadata": "See package LICENSE; metadata unspecified"
+  },
+  {
+    "name": "joblib",
+    "version": "1.6.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "kiwisolver",
+    "version": "1.5.1",
+    "license_metadata": "=========================\n The Kiwi licensing terms\n=========================\nKiwi is licensed under the terms of the Modified BSD License (also known as\nNew or Revised BSD), as follows:\n\nCopyright (c) 2013-2026, Nucleic Development Team\n\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this\nlist of conditions "
+  },
+  {
+    "name": "Mako",
+    "version": "1.4.3",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "MarkupSafe",
+    "version": "3.0.4",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "matplotlib",
+    "version": "3.11.2",
+    "license_metadata": "License agreement for matplotlib versions 1.3.0 and later\n =========================================================\n\n 1. This LICENSE AGREEMENT is between the Matplotlib Development Team\n (\"MDT\"), and the Individual or Organization (\"Licensee\") accessing and\n otherwise using matplotlib software in source or binary form and its\n associated documentation.\n\n 2. Subject to the terms and conditions of this License Agreement, MDT\n hereby grants Licensee a nonexclusive, royalty-free, world-wide licens"
+  },
+  {
+    "name": "mlflow",
+    "version": "3.17.2",
+    "license_metadata": "Copyright 2018 Databricks, Inc.  All rights reserved.\n\n\t\t\t\tApache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      t"
+  },
+  {
+    "name": "mlflow-skinny",
+    "version": "3.17.2",
+    "license_metadata": "Copyright 2018 Databricks, Inc.  All rights reserved.\n\n\t\t\t\tApache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      t"
+  },
+  {
+    "name": "mlflow-tracing",
+    "version": "3.17.2",
+    "license_metadata": "Copyright 2018 Databricks, Inc.  All rights reserved.\n\n\t\t\t\tApache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      t"
+  },
+  {
+    "name": "multidict",
+    "version": "7.1.0",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "narwhals",
+    "version": "2.27.1",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "numpy",
+    "version": "2.5.4",
+    "license_metadata": "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0"
+  },
+  {
+    "name": "opentelemetry-api",
+    "version": "1.45.1",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "opentelemetry-proto",
+    "version": "1.45.1",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "opentelemetry-sdk",
+    "version": "1.45.1",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "opentelemetry-semantic-conventions",
+    "version": "0.66b1",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "packaging",
+    "version": "26.3",
+    "license_metadata": "Apache-2.0 OR BSD-2-Clause"
+  },
+  {
+    "name": "pandas",
+    "version": "3.1.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "pillow",
+    "version": "13.0.0",
+    "license_metadata": "MIT-CMU"
+  },
+  {
+    "name": "pip",
+    "version": "25.2",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "prettytable",
+    "version": "3.18.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "propcache",
+    "version": "0.5.4",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "protobuf",
+    "version": "7.36.2",
+    "license_metadata": "3-Clause BSD License"
+  },
+  {
+    "name": "pyarrow",
+    "version": "25.0.1",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "pyasn1",
+    "version": "0.6.4",
+    "license_metadata": "BSD-2-Clause"
+  },
+  {
+    "name": "pyasn1_modules",
+    "version": "0.4.2",
+    "license_metadata": "BSD"
+  },
+  {
+    "name": "pycparser",
+    "version": "3.12",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "pydantic",
+    "version": "2.14.1",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "pydantic_core",
+    "version": "2.50.1",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "pyparsing",
+    "version": "3.3.3",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "python-dateutil",
+    "version": "2.9.0.post0",
+    "license_metadata": "Dual License"
+  },
+  {
+    "name": "python-dotenv",
+    "version": "1.2.4",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "PyYAML",
+    "version": "6.0.3",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "requests",
+    "version": "2.34.2",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "scikit-learn",
+    "version": "1.9.1",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "scipy",
+    "version": "1.18.1",
+    "license_metadata": "Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers.\n All rights reserved.\n\n Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n\n 2. Redistributions in binary form must reproduce the above\n    copyright notice, this list of conditions and the following\n    disc"
+  },
+  {
+    "name": "six",
+    "version": "1.17.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "skops",
+    "version": "0.16.0",
+    "license_metadata": "See package LICENSE; metadata unspecified"
+  },
+  {
+    "name": "smmap",
+    "version": "5.0.3",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "SQLAlchemy",
+    "version": "2.1.6",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "sqlparse",
+    "version": "0.6.0",
+    "license_metadata": "See package LICENSE; metadata unspecified"
+  },
+  {
+    "name": "starlette",
+    "version": "1.9.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "threadpoolctl",
+    "version": "3.7.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "typing-inspection",
+    "version": "0.4.4",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "typing_extensions",
+    "version": "4.16.0",
+    "license_metadata": "PSF-2.0"
+  },
+  {
+    "name": "urllib3",
+    "version": "2.8.0",
+    "license_metadata": "MIT"
+  },
+  {
+    "name": "uvicorn",
+    "version": "0.54.0",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "wcwidth",
+    "version": "0.9.3",
+    "license_metadata": "See package LICENSE; metadata unspecified"
+  },
+  {
+    "name": "Werkzeug",
+    "version": "3.1.9",
+    "license_metadata": "BSD-3-Clause"
+  },
+  {
+    "name": "yarl",
+    "version": "1.25.1",
+    "license_metadata": "Apache-2.0"
+  },
+  {
+    "name": "zipp",
+    "version": "4.1.2",
+    "license_metadata": "MIT"
+  }
+]

@@ -1,0 +1,201 @@
+{
+  "status": "final_holdout_evaluated",
+  "freeze_sha256": "6a0549f8d0683c77730a3f9b39feb0535acf805b803c1bce53277b5fb0ed7f63",
+  "point": {
+    "tree": {
+      "rows": 59395,
+      "actual_units": 1884478.0,
+      "absolute_error": 1125248.643543741,
+      "mae": 18.945174569302818,
+      "wape": 0.5971142372284213
+    },
+    "last_observed_week": {
+      "rows": 59395,
+      "actual_units": 1884478.0,
+      "absolute_error": 1415540.0,
+      "mae": 23.8326458456099,
+      "wape": 0.7511576150000159
+    },
+    "trailing_average": {
+      "rows": 59395,
+      "actual_units": 1884478.0,
+      "absolute_error": 1219293.75,
+      "mae": 20.528558801245897,
+      "wape": 0.647019360268467
+    },
+    "seasonal_naive": {
+      "rows": 59395,
+      "actual_units": 1884478.0,
+      "absolute_error": 2044746.0,
+      "mae": 34.42623116423941,
+      "wape": 1.0850463629716027
+    }
+  },
+  "intervals": {
+    "0.8": {
+      "rows": 59395,
+      "coverage": 0.7545416280831719,
+      "mean_width": 32.09833486244052,
+      "median_width": 1.3803989552544502,
+      "mean_interval_score": 121.62009625585962
+    },
+    "0.95": {
+      "rows": 59395,
+      "coverage": 0.9417964475124169,
+      "mean_width": 92.92502836897366,
+      "median_width": 4.923076923076923,
+      "mean_interval_score": 216.19396546814963
+    }
+  },
+  "coverage": {
+    "candidates": 60389,
+    "scored": 59395,
+    "fraction": 0.9835400486843631,
+    "history_status_counts": {
+      "eligible": 59395,
+      "short_history": 757,
+      "new_product": 237
+    },
+    "eligible_missing_target": 0,
+    "seasonal_fallback_scored": 7677
+  },
+  "segment_coverage": [
+    {
+      "dimension": "history_segment",
+      "segment": "1-3",
+      "candidates": 757,
+      "scored": 0,
+      "coverage": 0.0,
+      "exclusions": {
+        "short_history": 757
+      }
+    },
+    {
+      "dimension": "history_segment",
+      "segment": "13-51",
+      "candidates": 5795,
+      "scored": 5795,
+      "coverage": 1.0,
+      "exclusions": {}
+    },
+    {
+      "dimension": "history_segment",
+      "segment": "4-12",
+      "candidates": 1882,
+      "scored": 1882,
+      "coverage": 1.0,
+      "exclusions": {}
+    },
+    {
+      "dimension": "history_segment",
+      "segment": "52+",
+      "candidates": 51718,
+      "scored": 51718,
+      "coverage": 1.0,
+      "exclusions": {}
+    },
+    {
+      "dimension": "history_segment",
+      "segment": "new_product",
+      "candidates": 237,
+      "scored": 0,
+      "coverage": 0.0,
+      "exclusions": {
+        "new_product": 237
+      }
+    },
+    {
+      "dimension": "scale_segment",
+      "segment": "5-25",
+      "candidates": 10308,
+      "scored": 10113,
+      "coverage": 0.9810826542491269,
+      "exclusions": {
+        "short_history": 195
+      }
+    },
+    {
+      "dimension": "scale_segment",
+      "segment": "<=5",
+      "candidates": 35746,
+      "scored": 35532,
+      "coverage": 0.9940133161752364,
+      "exclusions": {
+        "short_history": 214
+      }
+    },
+    {
+      "dimension": "scale_segment",
+      "segment": ">25",
+      "candidates": 14098,
+      "scored": 13750,
+      "coverage": 0.97531564760959,
+      "exclusions": {
+        "short_history": 348
+      }
+    },
+    {
+      "dimension": "scale_segment",
+      "segment": "new_product",
+      "candidates": 237,
+      "scored": 0,
+      "coverage": 0.0,
+      "exclusions": {
+        "new_product": 237
+      }
+    },
+    {
+      "dimension": "activity_segment",
+      "segment": "all_zero",
+      "candidates": 403,
+      "scored": 403,
+      "coverage": 1.0,
+      "exclusions": {}
+    },
+    {
+      "dimension": "activity_segment",
+      "segment": "new_product",
+      "candidates": 237,
+      "scored": 0,
+      "coverage": 0.0,
+      "exclusions": {
+        "new_product": 237
+      }
+    },
+    {
+      "dimension": "activity_segment",
+      "segment": "previously_positive",
+      "candidates": 59749,
+      "scored": 58992,
+      "coverage": 0.9873303318883998,
+      "exclusions": {
+        "short_history": 757
+      }
+    }
+  ],
+  "runtime_totals": {
+    "feature_seconds": 5.183681541937403,
+    "fit_seconds": 19.446322457049973,
+    "tree_inference_seconds": 0.09365074901143089,
+    "baseline_inference_seconds": 0.47228537590126507,
+    "training_rows": 4722124.0,
+    "total_seconds": 25.490512333926745
+  },
+  "total_seconds": 27.512937457999215,
+  "measurement_conditions": {
+    "machine": "arm64",
+    "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+    "python": "3.14.0",
+    "dependencies": {
+      "scikit-learn": "1.9.1",
+      "pandas": "3.1.0",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "joblib": "1.6.0"
+    },
+    "threads": 2,
+    "folds": "sequential; weekly retraining",
+    "timing": "wall-clock perf_counter; feature, fit, predict and baseline timing separate; no hyperparameter search"
+  },
+  "holdout_reuse_policy": "Any later model/method changes are exploratory; holdout is no longer untouched."
+}

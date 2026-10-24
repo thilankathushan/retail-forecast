@@ -1,0 +1,7 @@
+# Separate serving environment; frozen forecasting environment stays unchanged.
+fastapi>=0.115,<1
+uvicorn>=0.34,<1
+streamlit>=1.45,<2
+plotly>=6,<7
+httpx>=0.28,<1
+httpx2>=2.13,<3
