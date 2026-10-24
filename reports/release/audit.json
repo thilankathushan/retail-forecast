@@ -1,7 +1,7 @@
 {
   "scope": "Git-tracked and unignored candidate files in Project 3 only; ignored runtime files excluded",
-  "candidate_files": 106,
-  "candidate_bytes": 1138825,
+  "candidate_files": 107,
+  "candidate_bytes": 1142364,
   "largest_files": [
     {
       "path": "reports/final/largest_error_examples.png",
@@ -37,7 +37,7 @@
     },
     {
       "path": "PROGRESS.md",
-      "bytes": 38488
+      "bytes": 39984
     },
     {
       "path": "retail_forecast/monitoring.py",

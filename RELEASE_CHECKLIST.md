@@ -1,6 +1,6 @@
 # Release checklist — 2026-10-24
 
-**Status: publication authorized; local checks pass.** MIT selected under the owner’s delegated choice. Project 3 has an isolated repository; hosted CI verification is pending the initial push.
+**Status: published with passing hosted CI.** Public repository: [thilankathushan/retail-forecast](https://github.com/thilankathushan/retail-forecast). MIT selected under the owner’s delegated choice. The application remains a local demo, not a public hosted service.
 
 ## Verified locally
 
@@ -24,7 +24,7 @@
 - [x] **Code license:** MIT selected under owner-delegated choice; LICENSE and package metadata added. UCI data attribution remains separate.
 - [x] **Standalone repository:** Git initialized inside Project 3; parent repository, other projects and existing local artifacts preserved. The workflow is at the new repository root.
 - [x] **Publication authorization:** owner explicitly requested a public retail-forecast repository and push; no force-push or overwrite of remote work is permitted.
-- [ ] **Hosted CI:** verify both Linux jobs after the initial push and record the run URL.
+- [x] **Hosted CI:** core and application jobs passed for release commit `0cf911d` on GitHub Actions, Python 3.14/Ubuntu: [verified run](https://github.com/thilankathushan/retail-forecast/actions/runs/40094646080).
 
 ## Explicit verification limits / future work
 

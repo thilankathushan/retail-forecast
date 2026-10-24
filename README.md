@@ -1,5 +1,9 @@
 # Retail Forecast
 
+[![Fixture CI](https://github.com/thilankathushan/retail-forecast/actions/workflows/ci.yml/badge.svg)](https://github.com/thilankathushan/retail-forecast/actions/workflows/ci.yml)
+
+Public source repository; the dashboard is a **local demo**, not a publicly hosted service.
+
 **One-week-ahead observed product sales, with reproducible evaluation and visible uncertainty.**
 
 Retail Forecast is an ML engineering portfolio project by Thilanka Thushan. It turns UCI Online Retail II transactions into audited weekly series, compares simple baselines with a global scikit-learn tree, and serves saved forecasts through FastAPI and Streamlit. Local MLflow and a historical replay make data versions, errors and monitoring decisions inspectable.
@@ -53,6 +57,13 @@ flowchart LR
 The core, app and optional tracking environments are isolated. Feature generation is shared between training and inference. The API validates and caches a saved JSON bundle; requests never retrain or deserialize model binaries. SQLite monitoring keys prevent duplicate forecasts and defer error measurement until actuals are available.
 
 ## Quickstart
+
+Clone the standalone repository first:
+
+```sh
+git clone https://github.com/thilankathushan/retail-forecast.git
+cd retail-forecast
+```
 
 Run from the project root with Python 3.14 (verified locally on 3.14.0). Installation requires package-index access; fixture tests run offline afterward.
 
