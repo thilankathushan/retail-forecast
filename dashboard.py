@@ -13,10 +13,13 @@ st.markdown('''<style>
 [data-testid="stMetricValue"]{font-size:24px}
 .eyebrow{font-size:12px;letter-spacing:2px;color:#107c72;font-weight:700}
 </style>''',unsafe_allow_html=True)
-API = os.environ.get('RETAIL_API_URL','http://127.0.0.1:8000').rstrip('/')
+API = os.environ.get('RETAIL_API_URL','').rstrip('/')
 
 @st.cache_data(ttl=60,show_spinner=False)
 def fetch(route, **params):
+    if not API:
+        from retail_forecast.cloud_demo import fetch as saved_fetch
+        return saved_fetch(route, **params)
     with httpx.Client(timeout=45,trust_env=False) as client:
         response = client.get(API+route,params=params)
     if response.status_code != 200:
@@ -29,8 +32,8 @@ def get(route, **params):
     try:
         with st.spinner('Loading saved retail artifacts…'):
             return fetch(route,**params)
-    except (httpx.HTTPError,ValueError) as exc:
-        st.error(f'Could not load the local API. {exc}')
+    except (httpx.HTTPError,ValueError,OSError) as exc:
+        st.error(f'Could not load saved forecasts. {exc}')
         st.code('.venv-app/bin/python -m uvicorn retail_forecast.api:app --host 127.0.0.1 --port 8000')
         st.caption('If artifacts are missing, run .venv/bin/python scripts/build_app_bundle.py first. Retry after starting the API.')
         if st.button('Retry connection'):

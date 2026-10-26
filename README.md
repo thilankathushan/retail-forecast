@@ -2,7 +2,7 @@
 
 [![Fixture CI](https://github.com/thilankathushan/retail-forecast/actions/workflows/ci.yml/badge.svg)](https://github.com/thilankathushan/retail-forecast/actions/workflows/ci.yml)
 
-Public source repository; the dashboard is a **local demo**, not a publicly hosted service.
+Public source repository with a self-contained Streamlit Community Cloud deployment mode. Historical data only; cloud deployment status must be verified separately.
 
 **One-week-ahead observed product sales, with reproducible evaluation and visible uncertainty.**
 
@@ -204,3 +204,11 @@ Actual captures: [historical chart](reports/application/historical-chart.png), [
 ![Measured interval diagnostics](reports/final/interval_diagnostics.png)
 
 [Case study](CASE_STUDY.md) explains engineering tradeoffs and failures; [demo script](DEMO_SCRIPT.md) provides a two-minute recording guide. [PROGRESS.md](PROGRESS.md) records milestones and verification. Official implementation references: [FastAPI tests](https://fastapi.tiangolo.com/tutorial/testing/), [Starlette test client](https://www.starlette.io/testclient/), [Streamlit charts](https://docs.streamlit.io/develop/api-reference/charts/st.plotly_chart), [Docker Compose](https://docs.docker.com/reference/compose-file/services/).
+
+## Streamlit Community Cloud
+
+Deploy repository `thilankathushan/retail-forecast`, branch `main`, entrypoint `dashboard.py`. Select Python 3.13 in Advanced settings. Root `requirements.txt` installs the dashboard dependencies. No secrets, external API or separate Render service are required. Leave `RETAIL_API_URL` unset for the standalone mode; set it only when intentionally using the FastAPI backend.
+
+The default dashboard reads selected products from the hash-verified, approximately 8 MB `demo/observed-sales.zip`. It contains attributed derived historical observations and forecasts, not customer IDs, raw transactions or model binaries. See [demo provenance](demo/README.md). This deployment export does not change model predictions or rerun the holdout.
+
+For an existing failed cloud deployment, allow the GitHub update to rebuild dependencies; if it does not, use **Manage app → Reboot app**. No dependency names should be entered as secrets. Check product 22423, historical week 2011-11-28, Monitoring and Beyond dataset after deployment. Community Cloud may sleep and has resource limits; this is a portfolio demo, not production monitoring.

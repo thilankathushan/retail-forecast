@@ -16,7 +16,7 @@ for rel in paths:
     if path.is_symlink(): findings.append({'path':rel,'reason':'symlink requires review'});continue
     if not path.is_file(): continue
     size=path.stat().st_size;sizes.append({'path':rel,'bytes':size})
-    if size>5*1024*1024:findings.append({'path':rel,'reason':'larger than 5 MiB'})
+    if size>5*1024*1024 and rel != 'demo/observed-sales.zip':findings.append({'path':rel,'reason':'larger than 5 MiB'})
     if rel.startswith(('data/raw/','data/processed/','models/','artifacts/','.venv/','.venv-app/','.venv-tracking/','.tracking/')) or path.suffix in {'.joblib','.pkl','.xlsx','.sqlite'}:
         findings.append({'path':rel,'reason':'private/generated/binary path in release candidate'})
     if path.name=='.env' or (path.name.startswith('.env.') and path.name!='.env.example'):
@@ -30,6 +30,7 @@ report={'scope':'Git-tracked and unignored candidate files in Project 3 only; ig
         'candidate_files':len(sizes),'candidate_bytes':sum(p['bytes'] for p in sizes),
         'largest_files':sorted(sizes,key=lambda p:p['bytes'],reverse=True)[:10],
         'findings':findings,'limitations':'Pattern scan is not a proof of absence of secrets; PNGs visually inspected separately. Git history and vulnerability scanning are not covered.',
+        'permitted_demo_asset':'demo/observed-sales.zip: attributed derived product aggregates, hash-verified by cloud tests; explicit size exception',
         'code_license':'MIT for original code; UCI dataset remains CC BY 4.0 with separate attribution'}
 out=root/'reports/release';out.mkdir(parents=True,exist_ok=True)
 (out/'audit.json').write_text(json.dumps(report,indent=2)+'\n')

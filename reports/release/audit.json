@@ -1,8 +1,12 @@
 {
   "scope": "Git-tracked and unignored candidate files in Project 3 only; ignored runtime files excluded",
-  "candidate_files": 107,
-  "candidate_bytes": 1142364,
+  "candidate_files": 114,
+  "candidate_bytes": 9144128,
   "largest_files": [
+    {
+      "path": "demo/observed-sales.zip",
+      "bytes": 7992686
+    },
     {
       "path": "reports/final/largest_error_examples.png",
       "bytes": 193996
@@ -32,19 +36,16 @@
       "bytes": 67602
     },
     {
+      "path": "PROGRESS.md",
+      "bytes": 41179
+    },
+    {
       "path": "reports/application/empty-search.png",
       "bytes": 40536
-    },
-    {
-      "path": "PROGRESS.md",
-      "bytes": 39984
-    },
-    {
-      "path": "retail_forecast/monitoring.py",
-      "bytes": 16746
     }
   ],
   "findings": [],
   "limitations": "Pattern scan is not a proof of absence of secrets; PNGs visually inspected separately. Git history and vulnerability scanning are not covered.",
+  "permitted_demo_asset": "demo/observed-sales.zip: attributed derived product aggregates, hash-verified by cloud tests; explicit size exception",
   "code_license": "MIT for original code; UCI dataset remains CC BY 4.0 with separate attribution"
 }
